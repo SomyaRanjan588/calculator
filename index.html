@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CALCULATOR</title>
+    <!--Template based on URL below-->
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/starter-template/">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <!--  stylesheet here-->
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="script.js"></script>
+
+</head>
+    <body>
+        <div class="style">
+            <h1>CALCULATOR</h1>
+            <div class="design">
+                <form name="forms">
+                    <input type="text" name="result" id="answer"><br>
+                    <table> 
+                         <tr>
+                            <td><input type="button" value="AC" onclick="forms.result.value = '' "></td>
+                             <td><input type="button" value="<-" onclick="forms.result.value =forms.result.value.substr(0,forms.result.value.length-1)  "></td>
+                             <td><input type="button" value="%" onclick="forms.result.value += '%' "></td>
+                             <td><input type="button" value="/" onclick="forms.result.value += '/' "></td>
+                        </tr>
+                        <tr>
+                            <td><input type="button" value="7" onclick="forms.result.value += '7' "></td>
+                             <td><input type="button" value="8" onclick="forms.result.value += '8' "></td>
+                             <td><input type="button" value="9" onclick="forms.result.value += '9' "></td>
+                            <td><input type="button" value="X" onclick="forms.result.value += '*' "></td>
+                        </tr>
+                         <tr>
+                            <td><input type="button" value="4" onclick="forms.result.value += '4' "></td>
+                             <td><input type="button" value="5" onclick="forms.result.value += '5' "></td>
+                             <td><input type="button" value="6" onclick="forms.result.value += '6' "></td>
+                             <td><input type="button" value="-" onclick="forms.result.value += '-' "></td>
+                        </tr>
+                         <tr>
+                            <td><input type="button" value="1" onclick="forms.result.value += '1' "></td>
+                             <td><input type="button" value="2" onclick="forms.result.value += '2' "></td>
+                             <td><input type="button" value="3" onclick="forms.result.value += '3' "></td>
+                             <td><input type="button" value="+" onclick="forms.result.value += '+' "></td>
+                        </tr>
+                        <tr>
+                            <td><input type="button" value="0" onclick="forms.result.value += '0' "></td>
+                             <td><input type="button" value="00" onclick="forms.result.value += '00' "></td>
+                             <td><input type="button" value="." onclick="forms.result.value += '.' "></td>
+                             <td><input type="button" value="=" onclick="forms.result.value= eval(forms.result.value) "></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+        
+         <!-- Java Script online link-->
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- End of java Script online link--> 
+    </body>
+</html>
